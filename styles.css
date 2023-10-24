@@ -1,0 +1,540 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #ffd09b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*---------HEADER------------*/
+header {
+    background: url(img/header/cabecera.jpg) #49a3d6;
+    background-repeat: no-repeat;
+    background-position: top;
+    max-height: 600px;
+}
+
+header .menu {
+    margin: 40px 0px;
+    text-align: right;
+}
+
+header .menu a {
+    margin: 0 20px;
+    color: white;
+    padding-bottom: 9px;
+    font-size: 1em;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+header .menu a:hover{
+    border-bottom: 2px solid white;
+}
+
+header .contenedor-texto {
+    display: flex;
+    margin: 190px;
+    justify-content: center;
+    align-content: center;
+}
+
+header .contenedor-texto .texto {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+
+}
+
+header .contenedor-texto .texto h1,
+header .contenedor-texto .texto h2 {
+    color: white;
+    font-weight: 300;
+    margin: 0;
+}
+
+header .contenedor-texto .texto .nombre {
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+
+
+header .contenedor-texto .texto .profesion {
+    font-size: 25px;
+    line-height: 25px;
+} 
+
+/*----------MAIN--------*/
+.main .contenedor {
+    overflow: visible;
+}
+
+.main .acerca-de {
+    text-align: center;
+}
+
+.main .acerca-de .foto {
+    margin-top: -60px;
+}
+
+.main .acerca-de .foto img {
+    vertical-align: top;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.main .acerca-de .texto {
+    color: #5a5a5a;
+    font-weight: 600px bold;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+
+.main .acerca-de .texto .titulo {
+    font-size: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #dd820d;
+    text-align: center;
+    line-height: 34px;
+}
+
+.main .acerca-de .texto .titulo::after {
+    content: '';
+    height: 10px;
+    width: 20%;
+    margin: auto;
+    background-color: #ffd7a3;
+    display: block;
+    border-radius: 50px;
+    margin-top: -10px;
+}
+
+.main .acerca-de .texto .bold {
+    color: #3895ea;
+    text-decoration: underline;
+}
+
+.main .trabajos {
+    background-color: #f2f2f2;
+    padding: 60px 0;
+
+}
+
+.main .trabajos .contenedor {
+    overflow: hidden;
+}
+
+.main .trabajos .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #343d5b;
+    text-align: center;
+}
+
+.main .trabajos .titulo::after {
+    content: '';
+    height: 10px;
+    width: 14%;
+    margin: auto;
+    background-color: rgb(158, 171, 213);
+    display: block;
+    border-radius: 50px;
+    margin-top: -10px;
+}
+
+.main .trabajos .contenedor-trabajos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main  .trabajos .contenedor-trabajos .trabajo {
+    width: 23%;
+    margin-bottom: 40px;
+}
+
+.main  .trabajos .contenedor-trabajos .trabajo .thumb{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main  .trabajos .contenedor-trabajos .trabajo .thumb img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 3px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion {
+    text-align: center;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .nombre {
+    font-weight: 700;
+    color: #3895EA;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+    font-size: 14px;
+    color: #636363;
+}
+
+.main .tecnologias {
+    background-color: rgb(255, 255, 255);
+    padding: 60px 0;
+}
+
+.main .tecnologias h3 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 300;
+    color: #dd820d;
+}
+
+.main .tecnologias h3::after {
+    content: '';
+    height: 10px;
+    width: 19%;
+    margin: auto;
+    background-color: #ffd7a3;
+    display: block;
+    border-radius: 50px;
+    margin-top: -12px;
+}
+
+.main .tecnologias .contenedor-tecnologias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main .tecnologias .contenedor-tecnologias .tecnologia {
+    width: 20%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main .tecnologias .contenedor-tecnologias .tecnologia .thumb {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.main .tecnologias .contenedor-tecnologias .tecnologia .thumb img {
+    width: 50%;
+}
+
+
+.main .tecnologias .contenedor-tecnologias .tecnologia .descripcion {
+    text-align: center;
+}
+
+.main .tecnologias .contenedor-tecnologias .tecnologia .descripcion .categoria {
+    font-size: 14px;
+    color: #636363;
+}
+
+/*-----------FOOTER---------*/
+footer .contacto {
+    padding: 60px 0;
+    background-color: #f2f2f2;
+}
+
+footer .contacto .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #3895ea;
+    text-align: center;
+}
+
+footer .contacto .titulo::after {
+    content: '';
+    height: 10px;
+    width: 15%;
+    margin: auto;
+    background-color: #a6cdf2;
+    display: block;
+    border-radius: 50px;
+    margin-top: -10px;
+}
+
+
+footer .contacto .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .contacto .formulario [type="text"],
+footer .contacto .formulario [type="email"],
+footer .contacto .formulario textarea   {
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color:#a4a4a4;
+}
+
+footer .contacto .formulario [type="text"]:focus,
+footer .contacto .formulario [type="email"]:focus,
+footer .contacto .formulario textarea:focus {
+    border: 2px solid #3895EA;
+}
+
+footer .contacto .formulario [type="text"],
+footer .contacto .formulario [type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+footer .contacto .formulario textarea {
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    max-height: 300px;
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+footer .contacto .formulario .boton {
+    margin: auto;
+    background-color: #3895ea;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+footer .contacto .formulario .boton:hover {
+    background-color: #387bea;
+}
+
+footer .redes-sociales {
+    background-color: #1e2b38;
+    padding: 60px 0px 50px 0;
+}
+
+footer .redes-sociales .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales a {
+    color: white;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0px 10px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer .redes-sociales .github:hover {background-color: #333;}
+
+footer .redes-sociales .mail:hover {background-color: #bc4b4b;}
+
+footer .redes-sociales .discord:hover {background-color: #5865f2;}
+
+footer .redes-sociales .linkedin:hover {background-color: #0077b5;}
+
+footer .redes-sociales .instagram:hover {background-color: #833ab4;}
+
+
+/*-------------MEDIA QUERIES ------------*/
+@media screen and (max-width: 800px) {
+    header .menu {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .main .trabajos .contenedor .trabajo {
+        width: 46%;
+    }
+
+    .main .tecnologias .contenedor .contenedor-tecnologias .tecnologia {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .main .tecnologias .contenedor .contenedor-tecnologias .tecnologia .thumb {
+        justify-content: space-between;
+        width: 170%;
+        padding-left: 20px;
+    }
+
+    .main .tecnologias .contenedor .contenedor-tecnologias .tecnologia .descripcion .categoria {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 496px) {
+    header .menu {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    button {
+        position: absolute;
+        top: 30px;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    header .contenedor-texto .texto .nombre {
+        font-size: 35px;
+    }
+
+    header .contenedor-texto .texto .profesion {
+        font-size: 18px;
+    }
+
+    .main .acerca-de .texto .titulo::after {
+        width: 45%;
+    }
+    .main .trabajos .titulo::after {
+        width: 30%;
+    }
+    .main .tecnologias h3::after {
+        width: 40%;
+    }
+    footer .contacto .titulo::after {
+        width: 30%;
+    }
+
+    footer .redes-sociales .contenedor {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .main .trabajos .contenedor .trabajo .thumb {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+
+body.dark {
+    transition: 2s ease all;
+    background-color: rgb(47, 47, 47);
+}
+
+body.dark header .contenedor nav a{
+    color: rgb(194, 194, 194); 
+}
+
+body.dark header .contenedor nav a:hover{
+    border-bottom: 2px solid rgb(194, 194, 194); 
+}
+
+body.dark header{
+    background: url(img/header/cabeceraoscurecida.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    max-height: 600px;
+}
+
+body.dark .main .acerca-de .texto {
+    color: rgb(194, 194, 194);
+}
+
+body.dark .main .trabajos{
+    transition: 2s ease all;
+    background-color:rgb(73, 73, 73) ;
+}
+
+body.dark .main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+    color: rgb(215, 215, 215);
+}
+
+body.dark .main .trabajos .titulo {
+    color: rgb(215, 215, 215);
+}
+
+body.dark .main .tecnologias {
+    background-color: rgb(47, 47, 47);
+}
+
+body.dark .main .tecnologias .contenedor .contenedor-tecnologias .tecnologia .thumb .categoria {
+    color: white;
+}
+
+body.dark footer .redes-sociales {
+    background-color: rgb(47, 47, 47);
+}
+
+body.dark footer .contacto {
+    background-color: rgb(73, 73, 73) ;
+}
+
+body.dark *::selection {
+    background-color: rgb(62, 62, 62);
+}
+
+body.dark .main .acerca-de .texto .titulo::after {
+    background: none;
+}
+
+body.dark .main .trabajos .titulo::after {
+    background: none;
+}
+
+body.dark .main .tecnologias h3::after {
+    background: none;
+}
+
+body.dark footer .contacto .titulo::after {
+    background: none;
+}
+
+
+
+button {
+    transition: 2s ease all;
+    position: absolute;
+    float: right;
+    bottom: 5px;
+}
