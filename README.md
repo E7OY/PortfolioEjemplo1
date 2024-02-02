@@ -11,7 +11,7 @@ Repositorio para un ejemplo de portfolio hecho en HTML, CSS, SCSS y JS.
  https://portfolio-ejemplo1.vercel.app/
 </a>
 
-<br/ ><br/ ><br/ >
+
 
 Light Mode
 ---
