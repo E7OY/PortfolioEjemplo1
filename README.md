@@ -10,7 +10,7 @@ Repositorio para un ejemplo de portfolio hecho en HTML, CSS, SCSS y JS.
 <a href="https://portfolio-ejemplo1.vercel.app/">
   https://portfolio-ejemplo1.vercel.app/
 </a>
-
+<br/ ><br/ ><br/ >
 Light Mode
 
 ![FireShot Capture 006 - Portafolio de Eloy Garcia - ](https://github.com/E7OY/PortfolioEjemplo1/assets/102689282/dd9fb414-7600-4230-a1ac-ad3141021c3e)
