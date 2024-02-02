@@ -5,12 +5,8 @@
 Repositorio para un ejemplo de portfolio hecho en HTML, CSS, SCSS y JS.
 ```
 
-##Despliegue
-    <a href="https://portfolio-ejemplo1.vercel.app/
-" target="_blank">
-[        Preview
-](https://portfolio-ejemplo1.vercel.app/
-)    </a>
+## Despliegue
+    <a href="https://portfolio-ejemplo1.vercel.app/" target="_blank">https://portfolio-ejemplo1.vercel.app/</a>
 ___
 
 Light Mode
