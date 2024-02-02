@@ -14,7 +14,7 @@ Diseñado con Figma
 </a> ✏️
 <br/>
 
-## Despliegue     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vercel_logo_black.svg/2560px-Vercel_logo_black.svg.png">                          
+## Despliegue     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vercel_logo_black.svg/2560px-Vercel_logo_black.svg.png" width="50px">                          
 <a href="https://portfolio-ejemplo1.vercel.app/" target=_blank;>
  https://portfolio-ejemplo1.vercel.app/
 </a> 🚀
